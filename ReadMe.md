@@ -1,6 +1,6 @@
 <center>
 
-<img src="C:\Users\bolt6281\Desktop\SmartCycle_logo_skyblue.png" alt="SmartCycle_logo_skyblue" style="zoom:25%;" />
+<img src="C:\Users\bolt6281\Desktop\SmartCycle_logo_skyblue.png" style="zoom:25%;"/>
 
 
 
@@ -27,12 +27,8 @@
 
 이 부분은 스마트사이클 기기에 탑재되는 라즈베리파이에서 작동하는 시스템입니다.
 
-
-
 인공지능 스피커 NUGU가 서버에 촬영을 요청하는 신호를 보내면 스마트사이클이 서버로부터 신호를 받고
 이미지를 촬영 후 해당 스마트사이클의 고유번호와 함께 이미지를 서버로 전송합니다.
-
-
 
 - main.py : websocket을 통한 서버와의 통신, 이미지 촬영, QR code 인식 등을 진행하는 메인 프로그램
 
@@ -43,8 +39,6 @@
 ## SmartCycle_AI(Server)
 
 SmartCycle의 데이터 수집/데이터 증대/모델 학습 및 서버에서 작동하는 쓰레기 인식 시스템에 대한 부분입니다.
-
-
 
 분류하는 쓰레기의 종류는 배터리, 부탄가스, 종이팩, 유리병, 내열유리, 페트병, 약통, 스티로폼, 휴지, 우산으로 총
 10가지입니다. 더 많은 종류를 학습시키고 싶었지만 촬영에 필요한 물품을 준비하는데 어려움과 많은 시간이 소요될 것으로 예상되어 일상생활에서 가장 많이 사용하지만 가장 많이 실수하는 10가지를 선정하였습니다.
