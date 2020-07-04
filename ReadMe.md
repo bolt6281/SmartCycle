@@ -1,11 +1,11 @@
-<center><img src="https://user-images.githubusercontent.com/41158977/86502881-21c4e880-bde3-11ea-90c5-e5b1c35cb799.png" alt="SmartCycle_logo_skyblue" style="zoom: 20%;" /></center>
+<p align ="center"><img src="https://user-images.githubusercontent.com/41158977/86502881-21c4e880-bde3-11ea-90c5-e5b1c35cb799.png" alt="logo" width = 250; /></center>
 
 
 <h2 align="center"><b>SmartCycle</b></h2>
 
 <h4 align="center">Sort up Trash by Oneshot</h4>
 
-​														<center>[![google](https://user-images.githubusercontent.com/41158977/86503055-1ecaf780-bde5-11ea-8d0c-c51fbc8a7bbb.png)](https://play.google.com/store/apps/details?id=com.dimipo.smartcycle)</center>
+<p align="center"><a href="https://play.google.com/store/apps/details?id=com.dimipo.smartcycle"><img src="https://user-images.githubusercontent.com/41158977/86503055-1ecaf780-bde5-11ea-8d0c-c51fbc8a7bbb.png" alt="download"/></a></p>
 
 
 
@@ -20,7 +20,6 @@
 서버에 관한 내용은 [여기](https://github.com/whoisStarBox/SmartCycle_server)를 참고해주세요.
 
 
--------
 
 ## **SmartCycle(Raspberry Pi)**
 
@@ -33,7 +32,7 @@
 
 - post.py : 서버에 데이터를 전송하는 모듈
 
---------
+  
 
 
 ## **SmartCycle_AI(Server)**
@@ -44,6 +43,8 @@ SmartCycle의 데이터 수집/데이터 증대/모델 학습 및 서버에서 �
 10가지입니다. 더 많은 종류를 학습시키고 싶었지만 촬영에 필요한 물품을 준비하는데 어려움과 많은 시간이 소요될 것으로 예상되어 일상생활에서 가장 많이 사용하지만 가장 많이 실수하는 10가지를 선정하였습니다.
 
 ex) 내열유리 : 유리가 아닌 일반 쓰레기에 버려야 함 / 부탄가스 : 구멍을 뚫고 내용물을 모두 제거한 뒤 버려야 함
+
+
 
 
 ### **데이터 수집(SmartCycle_DataCollector)**
@@ -71,6 +72,7 @@ ex) 내열유리 : 유리가 아닌 일반 쓰레기에 버려야 함 / 부탄�
 
 
 * 라벨링은 [labelImg](https://github.com/tzutalin/labelImg)를 이용하였습니다.
+* 
 
 ### **데이터 증대(data aumentation)**
 
@@ -81,8 +83,6 @@ ex) 내열유리 : 유리가 아닌 일반 쓰레기에 버려야 함 / 부탄�
 - suffle&save.py : 모든 데이터를 무작위로 섞고 파일명을 변경하여 한 폴더에 저장
 
   데이터를 순서대로 학습시키면 학습이 원활하게 진행되지 않을 확률이 높기에 class별로 나누어져있던 파일들의 파일명을 랜덤으로 변경하였습니다.
-
-
 
 
 
@@ -114,13 +114,11 @@ python webcam.py
 서버에서는 이 프로그램이 출력하는 결과를 받아 쓰레기 분리수거 정보 데이터베이스에서 해당 쓰레기의 분리수거 방법을 조회하고, 안내 메시지를 인공지능 스피커(NUGU)에게 전송하면 스피커는 사용자가 들고있는 쓰레기의 분리수거 방법을 안내합니다.
 
 
----
 
 ## **License**
 
 SmartCycle_AI/SmartCycle_Trainer/ObjectDetection/models는 Apache License 2.0을 따르며 
 이 외의 코드는 참고하셔도 좋습니다.
 
-궁금한 점이 있거나 SmartCycle_Trainer(모델과 classifier) 또는 본 프로젝트에 쓰인 데이터셋을 필요로 하신다면 간단한 이유와 함께
-bolt6281@gmail.com으로 연락부탁드립니다. 피드백도 주시면 감사하겠습니다.
+궁금한 점이 있거나 SmartCycle_Trainer(모델과 classifier) 또는 본 프로젝트에 쓰인 데이터셋을 필요로 하신다면 간단한 이유와 함께 bolt6281@gmail.com으로 연락부탁드립니다. 피드백도 주시면 감사하겠습니다.
 
