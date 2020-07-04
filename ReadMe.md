@@ -1,26 +1,28 @@
-<img src="https://user-images.githubusercontent.com/41158977/86502881-21c4e880-bde3-11ea-90c5-e5b1c35cb799.png" alt="SmartCycle_logo_skyblue" style="zoom: 25%;" />
+<center><img src="https://user-images.githubusercontent.com/41158977/86502881-21c4e880-bde3-11ea-90c5-e5b1c35cb799.png" alt="SmartCycle_logo_skyblue" style="zoom: 20%;" /></center>
 
 
 <h2 align="center"><b>SmartCycle</b></h2>
 
 <h4 align="center">Sort up Trash by Oneshot</h4>
 
-​														<center>[<img src="https://user-images.githubusercontent.com/41158977/86502955-e7a81680-bde3-11ea-980a-bc4dbea54b02.png" alt="1" style="zoom:50%;" />](https://play.google.com/store/apps/details?id=com.dimipo.smartcycle)</center>
+​														<center>[![google](https://user-images.githubusercontent.com/41158977/86503055-1ecaf780-bde5-11ea-8d0c-c51fbc8a7bbb.png)](https://play.google.com/store/apps/details?id=com.dimipo.smartcycle)</center>
 
 
 
-## Introduction
+## **Introduction**
 
 모두를 위한 인공지능 분리수거 도우미 SmartCycle은 카메라 앞에 쓰레기를 보여주며 어떻게 버리는 지 물어보면 음성으로 사용자의 분리수거를 도와주는 서비스입니다. 
 
 핵심 기능 이외에도 분리수거 퀴즈를 제공하며, 모바일 앱으로도 SmartCycle을 이용할 수 있습니다. 모바일 앱에서는 촬영을 통한 쓰레기 검색, 쓰레기 관련 게시글 조회, 수동 검색 등을 지원하고 있습니다(모바일에서는 이미지와 텍스트를 통해 분리수거 방법을 안내합니다).
 
 모바일 앱에 관한 더 자세한 내용은 [여기](https://github.com/MODORIAPPS/SmartCycle-Sort_up_Trash_by_Oneshot)를 참고해주세요.
+
 서버에 관한 내용은 [여기](https://github.com/whoisStarBox/SmartCycle_server)를 참고해주세요.
 
 
+-------
 
-## SmartCycle(Raspberry Pi)
+## **SmartCycle(Raspberry Pi)**
 
 이 부분은 스마트사이클 기기에 탑재되는 라즈베리파이에서 작동하는 시스템입니다.
 
@@ -31,9 +33,10 @@
 
 - post.py : 서버에 데이터를 전송하는 모듈
 
+--------
 
 
-## SmartCycle_AI(Server)
+## **SmartCycle_AI(Server)**
 
 SmartCycle의 데이터 수집/데이터 증대/모델 학습 및 서버에서 작동하는 쓰레기 인식 시스템에 대한 부분입니다.
 
@@ -43,8 +46,7 @@ SmartCycle의 데이터 수집/데이터 증대/모델 학습 및 서버에서 �
 ex) 내열유리 : 유리가 아닌 일반 쓰레기에 버려야 함 / 부탄가스 : 구멍을 뚫고 내용물을 모두 제거한 뒤 버려야 함
 
 
-
-#### 데이터 수집(SmartCycle_DataCollector)
+### **데이터 수집(SmartCycle_DataCollector)**
 
 다양한 쓰레기의 이미지 데이터셋을 구할 수가 없었기 때문에 직접 데이터셋을 제작하기로 결정했습니다.
 
@@ -56,7 +58,7 @@ ex) 내열유리 : 유리가 아닌 일반 쓰레기에 버려야 함 / 부탄�
 
 
 
-#### 데이터 예시
+### **데이터 예시**
 
 
 
@@ -70,7 +72,7 @@ ex) 내열유리 : 유리가 아닌 일반 쓰레기에 버려야 함 / 부탄�
 
 * 라벨링은 [labelImg](https://github.com/tzutalin/labelImg)를 이용하였습니다.
 
-#### 데이터 증대(data aumentation)
+### **데이터 증대(data aumentation)**
 
 부족한 데이터를 보완하고자 다양한 상황에서 높은 인식률을 가질 수 있도록 좌우반전(Vertical Flip Augmentation), 0~30도 사이의 무작위 각도 회전(Rotation Augmentation), 밝기 조절(Brightness Augmentation) 기법을 이용하여 데이터셋을 4배 이상 부풀렸습니다.
 
@@ -82,7 +84,9 @@ ex) 내열유리 : 유리가 아닌 일반 쓰레기에 버려야 함 / 부탄�
 
 
 
-#### 모델 선정 이유와 학습(SmartCycle_Trainer, 용량 문제로 미첨부)
+
+
+### **모델 선정 이유와 학습(SmartCycle_Trainer, 용량 문제로 미첨부)**
 
 - Object Detection 
 
@@ -110,8 +114,9 @@ python webcam.py
 서버에서는 이 프로그램이 출력하는 결과를 받아 쓰레기 분리수거 정보 데이터베이스에서 해당 쓰레기의 분리수거 방법을 조회하고, 안내 메시지를 인공지능 스피커(NUGU)에게 전송하면 스피커는 사용자가 들고있는 쓰레기의 분리수거 방법을 안내합니다.
 
 
+---
 
-## License
+## **License**
 
 SmartCycle_AI/SmartCycle_Trainer/ObjectDetection/models는 Apache License 2.0을 따르며 
 이 외의 코드는 참고하셔도 좋습니다.
