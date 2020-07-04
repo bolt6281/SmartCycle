@@ -63,16 +63,15 @@ ex) 내열유리 : 유리가 아닌 일반 쓰레기에 버려야 함 / 부탄�
 
 
 
-<img src="https://user-images.githubusercontent.com/41158977/86502883-22f61580-bde3-11ea-980e-ba7edb84c7d7.jpg" alt="image9" style="zoom: 33%;" /><img src="https://user-images.githubusercontent.com/41158977/86502885-24274280-bde3-11ea-9f39-0bcb44a737e9.jpg" alt="image43" style="zoom: 33%;" /><img src="https://user-images.githubusercontent.com/41158977/86502882-225d7f00-bde3-11ea-85d4-a6c4b5bb9c66.jpg" alt="test1" style="zoom: 33%;" />
+<img src="https://user-images.githubusercontent.com/41158977/86502883-22f61580-bde3-11ea-980e-ba7edb84c7d7.jpg" alt="image9" width=250 /><img src="https://user-images.githubusercontent.com/41158977/86502885-24274280-bde3-11ea-9f39-0bcb44a737e9.jpg" alt="image43" width=250 /><img src="https://user-images.githubusercontent.com/41158977/86502882-225d7f00-bde3-11ea-85d4-a6c4b5bb9c66.jpg" alt="test1" width=250 />
 
 
 
-<img src="https://user-images.githubusercontent.com/41158977/86502884-238eac00-bde3-11ea-9158-fe3551448fed.jpg" alt="image24" style="zoom: 33%;" /><img src="https://user-images.githubusercontent.com/41158977/86502886-24bfd900-bde3-11ea-8c77-cde937813d98.jpg" alt="image-57" style="zoom: 33%;" /><img src="https://user-images.githubusercontent.com/41158977/86502880-2093bb80-bde3-11ea-8553-39df81514ef9.jpg" alt="image160" style="zoom: 33%;" />
+<img src="https://user-images.githubusercontent.com/41158977/86502884-238eac00-bde3-11ea-9158-fe3551448fed.jpg" alt="image24" width= 250 /><img src="https://user-images.githubusercontent.com/41158977/86502886-24bfd900-bde3-11ea-8c77-cde937813d98.jpg" alt="image-57" width = 250 /><img src="https://user-images.githubusercontent.com/41158977/86502880-2093bb80-bde3-11ea-8553-39df81514ef9.jpg" alt="image160" width=250/>
 
 
 
 * 라벨링은 [labelImg](https://github.com/tzutalin/labelImg)를 이용하였습니다.
-* 
 
 ### **데이터 증대(data aumentation)**
 
