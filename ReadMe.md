@@ -1,14 +1,11 @@
-<center>
-
-<img src="C:\Users\bolt6281\Desktop\SmartCycle_logo_skyblue.png" style="zoom:25%;"/>
-
+<img src="https://user-images.githubusercontent.com/41158977/86502881-21c4e880-bde3-11ea-90c5-e5b1c35cb799.png" alt="SmartCycle_logo_skyblue" style="zoom: 25%;" />
 
 
 <h2 align="center"><b>SmartCycle</b></h2>
 
 <h4 align="center">Sort up Trash by Oneshot</h4>
 
-​														<center>[<img src="https://camo.githubusercontent.com/e23adf1955ff7979d1ea24029a1f11b485011d27/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f636a73717257514b4a51703952464f372d684a394166704b7a6255625f5938347658666a6c503069524842766c61647741665869683938346f6c6b744468506e4671795a306e753941356a7646774f455150587a76376872336365335156734c4e386b5132416f3d7330" alt="img"  />](https://play.google.com/store/apps/details?id=com.dimipo.smartcycle)</center>
+​														<center>[<img src="https://user-images.githubusercontent.com/41158977/86502955-e7a81680-bde3-11ea-980a-bc4dbea54b02.png" alt="1" style="zoom:50%;" />](https://play.google.com/store/apps/details?id=com.dimipo.smartcycle)</center>
 
 
 
@@ -61,9 +58,13 @@ ex) 내열유리 : 유리가 아닌 일반 쓰레기에 버려야 함 / 부탄�
 
 #### 데이터 예시
 
-<img src="C:\Users\bolt6281\programming\Python\Team Projects\2019 STAC\data\dataset\train\image-57.jpg" alt="image-57" style="zoom:33%;" /><img src="C:\Users\bolt6281\programming\Python\Team Projects\2019 STAC\ObjectDetection\test1.jpg" alt="test1" style="zoom:33%;" /><img src="C:\Users\bolt6281\programming\Python\Team Projects\2019 STAC\data\raw_data\glass_bottle_2\image8.jpg" alt="image8" style="zoom:33%;" />
 
-<img src="C:\Users\bolt6281\programming\Python\Team Projects\2019 STAC\data\raw_data\heat_resistant_glass_1\image43.jpg" alt="image43" style="zoom: 33%;" /><img src="C:\Users\bolt6281\programming\Python\Team Projects\2019 STAC\data\raw_data\pet_1\image160.jpg" alt="image160" style="zoom:33%;" /><img src="C:\Users\bolt6281\programming\Python\Team Projects\2019 STAC\data\raw_data\tissue_2\image24.jpg" alt="image24" style="zoom:33%;" />
+
+<img src="https://user-images.githubusercontent.com/41158977/86502883-22f61580-bde3-11ea-980e-ba7edb84c7d7.jpg" alt="image9" style="zoom: 33%;" /><img src="https://user-images.githubusercontent.com/41158977/86502885-24274280-bde3-11ea-9f39-0bcb44a737e9.jpg" alt="image43" style="zoom: 33%;" /><img src="https://user-images.githubusercontent.com/41158977/86502882-225d7f00-bde3-11ea-85d4-a6c4b5bb9c66.jpg" alt="test1" style="zoom: 33%;" />
+
+
+
+<img src="https://user-images.githubusercontent.com/41158977/86502884-238eac00-bde3-11ea-9158-fe3551448fed.jpg" alt="image24" style="zoom: 33%;" /><img src="https://user-images.githubusercontent.com/41158977/86502886-24bfd900-bde3-11ea-8c77-cde937813d98.jpg" alt="image-57" style="zoom: 33%;" /><img src="https://user-images.githubusercontent.com/41158977/86502880-2093bb80-bde3-11ea-8553-39df81514ef9.jpg" alt="image160" style="zoom: 33%;" />
 
 
 
