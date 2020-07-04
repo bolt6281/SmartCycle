@@ -19,6 +19,7 @@
 핵심 기능 이외에도 분리수거 퀴즈를 제공하며, 모바일 앱으로도 SmartCycle을 이용할 수 있습니다. 모바일 앱에서는 촬영을 통한 쓰레기 검색, 쓰레기 관련 게시글 조회, 수동 검색 등을 지원하고 있습니다(모바일에서는 이미지와 텍스트를 통해 분리수거 방법을 안내합니다).
 
 모바일 앱에 관한 더 자세한 내용은 [여기](https://github.com/MODORIAPPS/SmartCycle-Sort_up_Trash_by_Oneshot)를 참고해주세요.
+서버에 관한 내용은 [여기](https://github.com/whoisStarBox/SmartCycle_server)를 참고해주세요.
 
 
 
