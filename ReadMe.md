@@ -89,13 +89,11 @@ ex) 내열유리 : 유리가 아닌 일반 쓰레기에 버려야 함 / 부탄�
 
 - Object Detection 
 
-  부족한 데이터를 보완하기 위해 [Tensorflow Object Detection API](https://github.com/tensorflow/models)의 Pre-trained 모델을 이용하기로 결정했고, 서버 환경이 Object Detection 모델을 작동시키기에 원활하지 않지만 높은 정확도를 최우선으로 하여  [Faster R-CNN Inception v2 coco](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz) 모델을 선정하였습니다.  공모전 종료 며칠 전에 학습을 시작해서 Yolo 모델 학습은 시도해보지 못했지만, 데이터만 충분하다면 Yolo모델이 빠른 처리가 요구되는 SmartCycle에 더욱 적합할 것입니다.
+  부족한 데이터를 보완하기 위해 [Tensorflow Object Detection API](https://github.com/tensorflow/models)의 Pre-trained 모델을 이용하기로 결정했고, 서버 환경이 Object Detection 모델을 작동시키기에 원활하지 않지만 높은 정확도를 우선으로 하여  [Faster R-CNN Inception v2 coco](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz) 모델을 선정하였습니다. 학습이 고성능의 컴퓨팅 파워를 요구하였기 때문에 실제 학습은 Google Cloud Platform에서 제공하는 VM instance(V100 16GB 1개)에서 진행하였습니다.
 
   [How to train an Object Detector using Tensorflow API on Ubuntu 16.04 (GPU)](https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Ubuntu-16.04-GPU) 참고
 
-  
-
-학습이 고성능의 컴퓨팅 파워를 요구하였기 때문에 실제 학습은 Google Cloud Platform에서 제공하는 Vm instance(V100 16GB 1개)에서 진행하였습니다.
+ i5 3세대 모바일 듀얼코어 cpu 기준으로 640x480 이미지를 처리하는데 5~6초 소요되었습니다. 적은 데이터와 저성능 cpu로 연산한 것을 감안하면 실제 서비스로 출시할 때는 많은 데이터를 기반으로 연산이 더 적은 모델(ex. YOLO)과 gpu서버를 이용한다면 이미지 촬영, 서버로 전송, 이미지 분류, 분리수거 안내 시작까지 1~2초 내로 가능할 것입니다.
 
 
 
@@ -116,8 +114,7 @@ python webcam.py
 
 ## **License**
 
-SmartCycle_AI/SmartCycle_Trainer/ObjectDetection/models는 Apache License 2.0을 따르며 
-이 외의 코드는 참고하셔도 좋습니다.
+SmartCycle_AI/SmartCycle_Trainer/ObjectDetection/models는 Tensorflow Object Detection Api의 일부로 Apache License 2.0을 따르며 이 외의 코드는 참고하셔도 좋습니다.
 
 궁금한 점이 있거나 SmartCycle_Trainer(모델과 classifier) 또는 본 프로젝트에 쓰인 데이터셋을 필요로 하신다면 간단한 이유와 함께 bolt6281@gmail.com으로 연락부탁드립니다. 피드백도 주시면 감사하겠습니다.
 
